@@ -90,6 +90,24 @@ header nav {
   text-transform: capitalize;
 
 }
+@media only screen and (max-width: 620px) {
+  header .logo, header .desktop {
+    display:none;}
+     header .mobile {
+       display:flex;
+       justify-content: center;
+       width:100%;
+       height: 4rem;
+     }
+     header .mobile ul {
+       display:flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 80%;
+     }
+  }
+}
+
 
 .main-content  {
   background-color: #3C7A7A;
@@ -139,6 +157,24 @@ header nav {
   color: #ECDE99;
   border-radius: 0.3rem;
   text-decoration: none;
+}
+@media only screen and (max-width:620px) {
+  .intro {
+    flex-direction: column;
+  }
+.intro .intro-left   {
+    width:100%;
+    margin:0rem;
+}
+.introtext {
+    padding: 2rem 1rem;
+    width:80%;
+    text-align: center;
+}
+.introtext a {
+    margin-top: 1.5rem;
+    width: 60%;
+    align-self: center;
 }
 
 
@@ -276,7 +312,7 @@ section .topic img {
 }
 
 .topic h3 {
-  
+
   color: #636363;
   line-height: 1.2;
   font-weight: 300;

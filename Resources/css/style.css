@@ -90,6 +90,7 @@ header nav {
   text-transform: capitalize;
 
 }
+
 .main-content  {
   background-color: #3C7A7A;
 }
@@ -139,6 +140,9 @@ header nav {
   border-radius: 0.3rem;
   text-decoration: none;
 }
+
+
+
 
 .start-learning, .info .info-right .flex-container:last-child, .thesis-exhibit .info-right .flex-container:first-child {
   background-color: #BAB9BA;}
@@ -210,6 +214,8 @@ header nav {
 }
 
 
+
+
 .start-learning {
  background-color: #013F3F;
 }
@@ -270,7 +276,7 @@ section .topic img {
 }
 
 .topic h3 {
-  /*color: #8A8A8A;*/
+  
   color: #636363;
   line-height: 1.2;
   font-weight: 300;
@@ -292,13 +298,7 @@ section .topic img {
   text-align:center;
 }
 
-.thesis-exhibit h1 {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
 
-
-}
 .thesis-exhibit h3 {
   color: #636363;
   font-weight: 100;

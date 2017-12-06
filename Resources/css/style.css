@@ -15,6 +15,9 @@ div , body{
 #mobile {
   display:none;
 }
+.mobile  {
+  display:none;
+}
 h1 {
   font-size: 3rem;
   color: #252525;
@@ -91,7 +94,7 @@ header nav {
 
 }
 @media only screen and (max-width: 620px) {
-  header .logo, header .desktop {
+  header .logo, header .desktop ul{
     display:none;}
      header .mobile {
        display:flex;
@@ -106,7 +109,7 @@ header nav {
        width: 80%;
      }
   }
-}
+
 
 
 .main-content  {
@@ -165,6 +168,7 @@ header nav {
 .intro .intro-left   {
     width:100%;
     margin:0rem;
+    border-radius:0;
 }
 .introtext {
     padding: 2rem 1rem;
@@ -176,8 +180,50 @@ header nav {
     width: 60%;
     align-self: center;
 }
+}
+@media only screen and (min-width:650px){
+  #deskimg  {
+    display:none;
+  }
+}
 
+@media only screen and (max-width:900px) {
+  .info-left {
+    width:50%;
+  }
+  .info-right {
+    width: 50%
+  }
+}
+@media only screen and (max-width:650px) {
+  .info-left {
+    width:60%;
+    padding:2rem 1.5rem;
+    display:none;
+  }
+  .info-right {
+    flex-direction: column;
+    align-items: center;
+    width:80%;
 
+  }
+  .flex-container {
+    flex-direction: column;
+    margin:0.5rem;
+  }
+  .right-content  {
+    width:100%;
+    height:60%;
+  }
+  #deskimg  {
+    display:none;
+  }
+  #mobile {
+    display:flex;
+    width:100%;
+    height:60%;
+}
+}
 
 
 .start-learning, .info .info-right .flex-container:last-child, .thesis-exhibit .info-right .flex-container:first-child {

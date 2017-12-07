@@ -34,7 +34,7 @@
   </header>
   <!--Introduction-->
 
-  <div class="intro">
+  <section class="intro">
 
       <div class="intro-left">
 
@@ -47,7 +47,7 @@
         <a href="#">Start Here</a>
       </div>
     </div>
-
+</section>
 <!--Information-->
 <section class="info">
      <div class="flex-container">
@@ -58,11 +58,11 @@
          <h3 id="italic">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan uran. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h3>
          <h3>Emanuel, Sr Strategist at Hiring.com</h3>
        </div>
-     </div> </div>
+     </div>
 
        <div class="info-right">
-         <div class="flex-container">
-           <img id="deskimg"src="Resources\images\information-orientation.jpg" alt="Students Walking to Class"/></img>
+         <div class="info-item">
+           <img id="desktop"src="Resources\images\information-orientation.jpg" alt="Students Walking to Class"/></img>
            <img id="mobile" src="Resources\images\information-orientation-mobile.jpg" alt="students going to class"></img>
            <div class="right-content">
              <h2>Orientation Date</h2>
@@ -70,8 +70,8 @@
              <h3 ><a href="#" id="read">Read more</a></h3>
            </div>
          </div>
-         <div class="flex-container">
-           <img id="deskimg" src="Resources\images\information-campus.jpg" alt="Study Hall with Map"/></img>
+         <div class="info-item">
+           <img id="desktop" src="Resources\images\information-campus.jpg" alt="Study Hall with Map"/></img>
            <img id="mobile" src="Resources\images\information-campus-mobile.jpg" alt="students in a study hall"/></img>
            <div class="right-content">
              <h2>Our campus</h2>
@@ -79,8 +79,8 @@
              <h3 ><a href="#" id="read">Read more</a></h3>
            </div>
          </div>
-         <div class="flex-container">
-           <img id="deskimg" src="Resources\images\information-guest-lecture.jpg" alt="Oliver Sack"/></img>
+         <div class="info-item">
+           <img id="desktop" src="Resources\images\information-guest-lecture.jpg" alt="Oliver Sack"/></img>
            <img id="mobile" src="Resources\images\information-guest-lecture-mobile.jpg" alt="Oliver Sack"/></img>
            <div class="right-content">
              <h2>Our guest lecture</h2>
@@ -141,25 +141,14 @@
          </div>
        </div>
      </div>
-     <div class="mobilecontainer">
 
-         <div class="mobileclasses">
-           <h2><a href="#">Software engineering</a></h2>
-           <h2><a href="#">Computer art</a></h2>
-           <h2><a href="#">Design</a></h2>
-           <h2><a href="#">Data</a></h2>
-           <h2><a href="#">Business</a></h2>
-           <h2><a href="#">Marketing</a></h2>
-         </div>
-
-       </div>
 
 
    </section>
    <!--Thesis -->
-   <section="thesis-exhibit">
+   <div="thesis-exhibit">
    <h1 class="thesis-title">Thesis Exhibit</h1>
-   <div class="flex-container">
+   <div class="thesis-content">
        <div class="info-left">
               <video autoplay loop>
                 <source src="Resources/videos/thesis.mp4" type="video/mp4"/>
@@ -170,16 +159,16 @@
         </div>
 
     <div class="info-right">
-      <div class="flex-container">
+      <div class="thesis-info">
         <img src="Resources/images/thesis-fisma.jpg" alt="Smart Phone"/>
         <div class="right-content">
         <h2>Fisma: Design and Prototype</h2>
         <h3>Designer showcase of a new prototype product</h3>
         <h3 ><a href="#" id="read">Read more</a></h3>
        </div>
-         </div>
 
-<div class="flex-container">
+
+       <div class="thesis-info">
   <img src="Resources/images/thesis-now-and-then.jpg" alt="New York Skyline"/</img>
   <div class="right-content">
     <h2>Now and Then</h2>
@@ -189,7 +178,8 @@
 </div>
 </div>
 </div>
-</section>
+</div>
+
 <div class="social">
    <span>Share your results with friends</span>
    <i class="fa fa-facebook fa-2x"></i>

@@ -6,6 +6,7 @@ font-family: 'Montserrat', sans-serif;
 body {
   display:block;
   margin:0;
+  font-family: 'Montserrat', sans-serif;
 }
 div , body{
   display:block;
@@ -41,6 +42,7 @@ h3 {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
+  position:relative;
 
 }
 
@@ -121,6 +123,9 @@ header nav {
   align-items: center;
 }
 
+
+
+
 .intro .intro-left {
   width: 60%;
   margin: 2rem 1.5rem;
@@ -161,6 +166,7 @@ header nav {
   border-radius: 0.3rem;
   text-decoration: none;
 }
+/*introduction media*/
 @media only screen and (max-width:620px) {
   .intro {
     flex-direction: column;
@@ -187,51 +193,13 @@ header nav {
   }
 }
 
-@media only screen and (max-width:900px) {
-  .info-left {
-    width:50%;
-  }
-  .info-right {
-    width: 50%
-  }
-}
-@media only screen and (max-width:650px) {
-  .info-left {
-    width:60%;
-    padding:2rem 1.5rem;
-    display:none;
-  }
-  .info-right {
-    flex-direction: column;
-    align-items: center;
-    width:80%;
-
-  }
-  .flex-container {
-    flex-direction: column;
-    margin:0.5rem;
-  }
-  .right-content  {
-    width:100%;
-    height:60%;
-  }
-  #deskimg  {
-    display:none;
-  }
-  #mobile {
-    display:flex;
-    width:100%;
-    height:60%;
-}
-}
 
 
-.start-learning, .info .info-right .flex-container:last-child, .thesis-exhibit .info-right .flex-container:first-child {
-  background-color: #BAB9BA;}
 
   .info {
     background-color:#206767;
     display:flex;
+
   }
 
   .info .info-left img {
@@ -239,12 +207,14 @@ header nav {
 }
 
   .info-left {
+    display:flex;
     width: 60%;
     padding: 2rem 1.5rem;
+    flex-direction: column;
   }
 .info-left img {
-  width: 60%;
-  margin-top: 0;
+    display:block;
+    width:100%;
 
 }
 #italic  {
@@ -264,8 +234,15 @@ header nav {
 
   color: #226666;
 }
+.info-right {
+  display:flex;
+  padding: 1rem 0;
 
-.info-right img {
+  width:auto;
+
+}
+
+#desktop img{
   margin: 1rem;
   width: 35%;
   border-radius: 0.5rem;
@@ -274,7 +251,8 @@ header nav {
 }
 
 .right-content {
-  display: inline-flex;
+  display:flex;
+  align-self: center;
   flex-direction: column;
   width: 65%;
   justify-content: space-between;
@@ -294,7 +272,36 @@ header nav {
 #mobile {
   display: none;
 }
+/*information media*/
+@media only screen and (max-width:650px) {
+  .info-left {
+    display:none;
+  }
+  .info .container {
+    flex-direction: column;
+  }
 
+  .info-right {
+    padding:1rem 0rem;
+    align-items: center;
+    width:80%;
+
+  }
+  .right-content {
+    align-self: flex-start;
+    width:50%;
+
+  }
+  .info-right img {
+    display:none;
+
+  }
+  #mobile {
+    display:block;
+  }
+
+
+}
 
 
 
@@ -370,8 +377,31 @@ section .topic img {
   font-weight: 300;
   padding: 0.5rem 1rem 1.5rem 1rem;
 }
-.mobile {
+.mobileclasses, mobilecontainer {
   display:none;
+}
+/*media for topics*/
+@media only screen and (max-width:650px) {
+   .topics {
+     flex-direction: column;
+     margin: 1rem 0rem 2rem 0rem;
+     width:100%;
+   }
+   .topics .topic {
+     flex:auto;
+     padding: 0.25rem 1rem 0.5rem 1rem;
+     width:100%;
+     box-sizing: border-box;
+     background-color: #ECDE99;
+   }
+   .topic img, h3, h4 {
+     display:none;
+   }
+   .topic h2:hover {
+     color: purple;
+   }
+
+
 }
 .exhibit {
   display:flex;
@@ -394,7 +424,7 @@ section .topic img {
 
 }
 
-.info-left video {
+.thesis-exhibit .info-left video {
   margin-bottom:2rem;
   width: 100%;
 }
@@ -402,6 +432,26 @@ section .topic img {
 .thesis-exhibit .right-content {
   margin:5rem 2rem;
 
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .thesis-exhibit .info-right {
+    display:none;
+  }
+
+
+  .thesis-exhibit .info-left video {
+    width:100%;
+
+  }
+  .thesis-exhibit h2 h3 {
+    display:none;
+}
+
+}
+  @media only screen and (min-width:320px) and (max-width:480px) {
+  .social {
+    display:none;
+  }
 }
 footer {
   color: #252525;
@@ -422,4 +472,13 @@ footer p {
   font-size: 1.5rem;
   margin-left: 1.5rem;
 
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+  footer  nav {
+    display:none;
+  }
+  footer {
+    padding: 1rem 1rem;
+  }
 }

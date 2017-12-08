@@ -153,7 +153,7 @@ header nav {
 }
 
 .introtext h3 {
-  padding: 1rem 0;
+  padding: 1rem ;
   line-height: 2rem;
 }
 
@@ -201,6 +201,13 @@ header nav {
     display:flex;
 
   }
+  .info-left {
+    display:flex;
+    width: 60%;
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+
   .info .info-left h1 {
     font-size: 2rem;
     padding-top: 2rem;
@@ -208,20 +215,13 @@ header nav {
   }
 
   .info .info-left img {
-  width: 100%
+  width: 100%;
+  display:block;
+  margin-top: 0;
 }
 
-  .info-left {
-    display:flex;
-    width: 60%;
-    padding: 2rem 1.5rem;
-    flex-direction: column;
-  }
-.info-left img {
-    display:block;
-    width:100%;
 
-}
+
 #italic  {
   font-style: italic;
 }
@@ -233,10 +233,9 @@ header nav {
 .info-right{
   display: flex;
   flex-direction: column;
-  width:60%;
+  width:40%;
   height:auto;
   padding: 1rem;
-
   color: #226666;
 }
 .info .info-item {
@@ -244,7 +243,7 @@ header nav {
   padding:1rem;
 }
 .info .info-item img{
-  width:35%;
+  width:40%;
   height:auto;
 }
 
@@ -257,9 +256,10 @@ header nav {
 
 }
 
-.right-content .container{
+.right-content {
   display:flex;
   flex-direction: column;
+  align-self: center;
   width: 85%;
   justify-content: center;
   height:100%;
@@ -449,14 +449,14 @@ header nav {
 
 .thesis-exhibit .right-content {
   display:flex;
-  
+
 
 
 
 
 }
 @media only screen and (max-width: 620px) {
-  .thesis-exhibit .flex-container {
+  .thesis-exhibit .thesis-info {
  width:100%;
 }
 
@@ -465,7 +465,7 @@ header nav {
  width:100%;
 
 }
-.thesis-exhibit .info-right .flex-container h2 h3 {
+.thesis-exhibit .info-right .thesis-info h2 h3 {
  display:none;
 }
 .thesis-exhibit .info-right {

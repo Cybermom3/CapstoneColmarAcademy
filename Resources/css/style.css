@@ -184,16 +184,17 @@ a {
     width:100%;
     margin:0rem;
     border-radius:0;
+    display:block;
 }
 .intro-right {
   width:100%;
 }
-.introtext{
+.intro-right{
     padding: 2rem 1rem;
     width:80%;
     text-align: center;
 }
-.introtext a {
+.intro-right a {
     margin-top: 1.5rem;
     width: 60%;
     align-self: center;
@@ -467,6 +468,7 @@ a {
 
   .info-left {
   width: 100%;
+  display:block;
 
   }
 

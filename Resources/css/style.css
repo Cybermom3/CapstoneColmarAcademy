@@ -178,11 +178,15 @@ a {
 @media only screen and (max-width:620px) {
   .intro {
     flex-direction: column;
+    width: 100%;
   }
 .intro .intro-left   {
     width:100%;
     margin:0rem;
     border-radius:0;
+}
+.intro-right {
+  width:100%;
 }
 .introtext{
     padding: 2rem 1rem;
@@ -460,24 +464,16 @@ a {
 
 
 @media only screen and (max-width: 620px) {
-  .thesis-exhibit .thesis-info {
- width:100%;
-}
 
+  .info-left {
+  width: 100%;
 
-.thesis-exhibit .info-left video {
- width:100%;
+  }
 
+  .info-right, .info-left h2, .info-left h3 {
+  display: none;
+  }
 }
-.thesis-exhibit .info-right .thesis-info h2 h3 {
- display:none;
-}
-.thesis-exhibit .info-right {
- display:none;
-}
-
-}
-
   @media only screen and (min-width:320px) and (max-width:480px) {
   .social {
     display:none;

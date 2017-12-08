@@ -137,7 +137,7 @@ header nav {
   width:100%;
 }
 
-.introtext {
+.intro-right{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,18 +146,18 @@ header nav {
   margin: 3rem 1rem;
 
 }
-.introtext h1  {
+.intro-right h1  {
   padding: 1rem;
   color: #013F3F;
   font-size: 2rem;
 }
 
-.introtext h3 {
+.intro-right h3 {
   padding: 1rem ;
   line-height: 2rem;
 }
 
-.introtext a {
+.intro-right a {
   background-color: #683602;
   padding: 0.75rem 0;
   text-align: center;
@@ -421,12 +421,8 @@ header nav {
 .thesis-title {
   text-align:center;
 }
-.thesis-exhibit .info-right {
-  flex-direction: column;
-  display:reflex;
-  padding-top: 2rem;
-  width:40%;
-}
+
+
 
 .thesis-exhibit h3 {
   color: #636363;
@@ -448,7 +444,7 @@ header nav {
 }
 
 .thesis-exhibit .right-content {
-  display:flex;
+  margin:5rem 2rem;
 
 
 

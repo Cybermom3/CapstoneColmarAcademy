@@ -166,6 +166,14 @@ header nav {
   border-radius: 0.3rem;
   text-decoration: none;
 }
+a:hover {
+  background-color: #cd5c5c;
+}
+a {
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+
 /*introduction media*/
 @media only screen and (max-width:620px) {
   .intro {
@@ -199,6 +207,7 @@ header nav {
   .info {
     background-color:#206767;
     display:flex;
+    padding: 2rem 1.5rem;
 
   }
   .info-left {
@@ -206,6 +215,7 @@ header nav {
     width: 60%;
     padding: 2rem 1.5rem;
     flex-direction: column;
+
   }
 
   .info .info-left h1 {
@@ -219,7 +229,9 @@ header nav {
   display:block;
   margin-top: 0;
 }
-
+#signature {
+  padding-top: 2rem;
+}
 
 
 #italic  {
@@ -238,6 +250,7 @@ header nav {
   height:auto;
   padding: 1rem;
   color: #226666;
+
 }
 .info .info-item {
   display:flex;
@@ -249,7 +262,7 @@ header nav {
 
 #desktop {
   margin: 1rem;
-  width: 100%;
+  width: 35%;
   border-radius: 0.5rem;
   max-height: 30%;
 
@@ -259,7 +272,7 @@ header nav {
   display:flex;
   flex-direction: column;
   align-self: center;
-  width: 50%;
+  width: 65%;
   justify-content: center;
   height:100%;
   margin: 1rem 2rem;
@@ -270,7 +283,9 @@ header nav {
   font-weight: 800;
 
 }
-
+.info-item:last-child {
+  background-color: #008b8b;
+}
 
 .info-right h3 {
   padding: 1rem;
@@ -416,10 +431,12 @@ header nav {
 }
 .thesis-exhibit {
   display:flex;
-  top:0rem;
+
+
 }
 .thesis-title {
   text-align:center;
+  padding:2rem;
 }
 
 
@@ -431,10 +448,8 @@ header nav {
 
 }
 
-.thesis-exhibit .info-right .flex-container:first-child h3 {
-  font-weight: 500;
-  color: #636363;
-
+.info-right .flex-container {
+  padding: 1rem;
 }
 
 
@@ -443,14 +458,7 @@ header nav {
   width: 100%;
 }
 
-.thesis-exhibit .right-content {
-  margin:5rem 2rem;
 
-
-
-
-
-}
 @media only screen and (max-width: 620px) {
   .thesis-exhibit .thesis-info {
  width:100%;

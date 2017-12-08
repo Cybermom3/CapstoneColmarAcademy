@@ -225,10 +225,11 @@ header nav {
 #italic  {
   font-style: italic;
 }
-
-.info-left h1, .info-left h2, .info-left h3 {
-  margin: 2rem 0;
+.info-right .container  {
+  width:40%;
 }
+
+
 
 .info-right{
   display: flex;
@@ -241,18 +242,16 @@ header nav {
 .info .info-item {
   display:flex;
   padding:1rem;
-}
-.info .info-item img{
-  width:40%;
-  height:auto;
+
 }
 
 
-#desktop img{
+
+#desktop {
   margin: 1rem;
-  width: 35%;
+  width: 100%;
   border-radius: 0.5rem;
-  height: auto;
+  max-height: 30%;
 
 }
 
@@ -260,9 +259,10 @@ header nav {
   display:flex;
   flex-direction: column;
   align-self: center;
-  width: 85%;
+  width: 50%;
   justify-content: center;
   height:100%;
+  margin: 1rem 2rem;
 }
 .info-right h2 {
   font-size: 1.5rem;
